@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — SolSow</title>
+<meta name="description" content="Privacy Policy for SolSow, a location-aware planting guide.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<a class="back" href="index.html">&larr; Back to Legal</a>
+
+<h1>Privacy Policy</h1>
+<span class="updated">Last updated: 20 February 2026</span>
+
+<h2>1. Overview</h2>
+<p>SolSow ("the App") is a gardening information application that provides location-aware planting guidance. This Privacy Policy describes how we collect, use, and protect your information. The App is developed and maintained in Australia.</p>
+
+<h2>2. Information We Collect</h2>
+
+<h3>2.1 Location Data</h3>
+<p>The App requests coarse location access (<code>ACCESS_COARSE_LOCATION</code>) to determine your approximate growing zone and provide region-appropriate planting recommendations. Location data is processed entirely on your device to match against bundled growing zone definitions. <strong>Your location is never transmitted to any external server.</strong></p>
+
+<h3>2.2 Wallet Information</h3>
+<p>If you choose to use the optional Sign In With Solana (SIWS) feature, your public wallet address is stored locally on your device using Android EncryptedSharedPreferences. The App verifies Seeker Genesis Token (SGT) ownership via the public Solana blockchain. <strong>We never have access to your private keys, seed phrase, or wallet funds.</strong></p>
+
+<h3>2.3 App Preferences</h3>
+<p>Your preferences (selected growing zone, notification frequency, favorite plants, display settings, disclaimer acceptance) are stored locally on your device using Android SharedPreferences.</p>
+
+<h2>3. Information We Do Not Collect</h2>
+<p>We do not collect, store, or transmit any personal information to external servers. Specifically, we do not use:</p>
+<ul>
+  <li>Analytics or tracking services</li>
+  <li>Advertising networks or ad identifiers</li>
+  <li>Third-party data collection SDKs</li>
+  <li>Crash reporting services</li>
+  <li>User behaviour monitoring</li>
+  <li>Cookies or web tracking</li>
+</ul>
+<p><strong>All data remains entirely on your device.</strong></p>
+
+<h2>4. Data Storage and Security</h2>
+<p>All data is stored locally on your device using:</p>
+<ul>
+  <li><strong>EncryptedSharedPreferences</strong> — for sensitive data such as wallet addresses (AES-256 encryption)</li>
+  <li><strong>SharedPreferences</strong> — for general app preferences and settings</li>
+</ul>
+<p>No data is transmitted to or stored on external servers. If you uninstall the App, all locally stored data is permanently deleted by the Android operating system.</p>
+
+<h2>5. Third-Party Services</h2>
+<p>The App connects to the following external services only when explicitly initiated by you:</p>
+<ul>
+  <li><strong>Solana blockchain network</strong> — solely for Sign In With Solana (SIWS) wallet verification and SGT ownership checking. Only your public wallet address (which is already publicly visible on the blockchain) is used.</li>
+</ul>
+<p>No personal data is shared with any third party.</p>
+
+<h2>6. Permissions</h2>
+<table>
+  <tr><th>Permission</th><th>Purpose</th><th>Required?</th></tr>
+  <tr><td><code>ACCESS_COARSE_LOCATION</code></td><td>Determine growing zone for planting recommendations</td><td>Optional (can select zone manually)</td></tr>
+  <tr><td><code>POST_NOTIFICATIONS</code></td><td>Planting reminders and seasonal tips</td><td>Optional</td></tr>
+  <tr><td><code>INTERNET</code></td><td>Solana wallet verification (SIWS)</td><td>Required for wallet feature only</td></tr>
+  <tr><td><code>RECEIVE_BOOT_COMPLETED</code></td><td>Reschedule notification reminders after device restart</td><td>Automatic</td></tr>
+</table>
+
+<h2>7. Children's Privacy</h2>
+<p>The App is not directed at children under 13. We do not knowingly collect information from children under 13. If you believe a child has provided us with personal information, please contact us and we will take steps to delete such information.</p>
+
+<h2>8. International Users</h2>
+<p>The App is available globally through the Solana Seeker dApp Store. As all data is stored locally on your device and no personal data is transmitted to external servers, there are no cross-border data transfers to consider.</p>
+
+<h2>9. Your Rights</h2>
+<p>Because all data is stored locally on your device, you have full control over your data at all times:</p>
+<ul>
+  <li><strong>Access:</strong> All your data is visible within the App settings</li>
+  <li><strong>Deletion:</strong> Disconnect your wallet, clear favorites, or uninstall the App to delete all data</li>
+  <li><strong>Portability:</strong> Not applicable as no data is stored externally</li>
+</ul>
+
+<h2>10. Changes to This Policy</h2>
+<p>We may update this Privacy Policy from time to time. Changes will be reflected in the "Last updated" date at the top of this page. Continued use of the App constitutes acceptance of any updated policy.</p>
+
+<h2>11. Contact</h2>
+<p>For questions or concerns about this Privacy Policy, contact us at:</p>
+<p><a href="mailto:aardappvark@proton.me">aardappvark@proton.me</a></p>
+
+<div class="footer">
+  <p>SolSow &middot; <code>com.solsow.app</code></p>
+  <p>Developed in Australia &middot; <a href="mailto:aardappvark@proton.me">aardappvark@proton.me</a></p>
+</div>
+</div>
+</body>
+</html>
