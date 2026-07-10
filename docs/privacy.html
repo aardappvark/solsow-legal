@@ -46,12 +46,13 @@
   <li><strong>EncryptedSharedPreferences</strong> — for sensitive data such as wallet addresses (AES-256 encryption)</li>
   <li><strong>SharedPreferences</strong> — for general app preferences and settings</li>
 </ul>
-<p>No data is transmitted to or stored on external servers. If you uninstall the App, all locally stored data is permanently deleted by the Android operating system.</p>
+<p>No data is transmitted to or stored on external servers, except as described in Section 5. If you uninstall the App, all locally stored data is permanently deleted by the Android operating system.</p>
 
 <h2>5. Third-Party Services</h2>
 <p>The App connects to the following external services only when explicitly initiated by you:</p>
 <ul>
   <li><strong>Solana blockchain network</strong> — solely for Sign In With Solana (SIWS) wallet verification and SGT ownership checking. Only your public wallet address (which is already publicly visible on the blockchain) is used.</li>
+  <li><strong>Open weather services (MET Norway, Open-Meteo)</strong> — only while Live Frost Alerts are enabled (an optional SolSow Pro feature, on by default and controllable in Settings). Requests contain only the approximate coordinates of your selected or nearest city — never your device's precise location — with no account, identifier, or other personal data.</li>
 </ul>
 <p>No personal data is shared with any third party.</p>
 
