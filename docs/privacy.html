@@ -12,7 +12,7 @@
 <a class="back" href="index.html">&larr; Back to Legal</a>
 
 <h1>Privacy Policy</h1>
-<span class="updated">Last updated: 20 February 2026</span>
+<span class="updated">Last updated: 24 July 2026</span>
 
 <h2>1. Overview</h2>
 <p>SolSow ("the App") is a gardening information application that provides location-aware planting guidance. This Privacy Policy describes how we collect, use, and protect your information. The App is developed and maintained in Australia.</p>
@@ -28,17 +28,20 @@
 <h3>2.3 App Preferences</h3>
 <p>Your preferences (selected growing zone, notification frequency, favorite plants, display settings, disclaimer acceptance) are stored locally on your device using Android SharedPreferences.</p>
 
+<h3>2.4 Anonymous Usage Statistics</h3>
+<p>The App sends anonymous, aggregate usage events (for example: <code>app_open</code>, <code>guide_opened</code>, <code>plant_tracked</code>) to our own analytics service, hosted on Cloudflare Workers. Each event contains <strong>only the event name</strong> — no user ID, device ID, wallet address, fingerprint, or any other identifier. An approximate country/city is derived at Cloudflare's network edge and stored solely as an aggregate daily count; <strong>your IP address is never logged or stored</strong>. Because no individual can be identified or singled out, this data is anonymous within the meaning of GDPR Recital 26 and comparable privacy laws (CCPA, LGPD, APPI, PIPA). For transparency, the aggregate totals are publicly viewable at <a href="https://solsow-analytics.aardappvark.workers.dev/public-stats">solsow-analytics.aardappvark.workers.dev/public-stats</a>.</p>
+
 <h2>3. Information We Do Not Collect</h2>
-<p>We do not collect, store, or transmit any personal information to external servers. Specifically, we do not use:</p>
+<p>We do not collect, store, or transmit any personal information. Specifically, we do not use:</p>
 <ul>
-  <li>Analytics or tracking services</li>
+  <li>Third-party analytics or tracking services (our only analytics are the first-party, identifier-free aggregate counters described in Section 2.4)</li>
   <li>Advertising networks or ad identifiers</li>
   <li>Third-party data collection SDKs</li>
   <li>Crash reporting services</li>
-  <li>User behaviour monitoring</li>
+  <li>Individual user behaviour monitoring or profiling</li>
   <li>Cookies or web tracking</li>
 </ul>
-<p><strong>All data remains entirely on your device.</strong></p>
+<p><strong>Your garden data, preferences, and wallet information remain entirely on your device.</strong></p>
 
 <h2>4. Data Storage and Security</h2>
 <p>All data is stored locally on your device using:</p>
@@ -46,13 +49,14 @@
   <li><strong>EncryptedSharedPreferences</strong> — for sensitive data such as wallet addresses (AES-256 encryption)</li>
   <li><strong>SharedPreferences</strong> — for general app preferences and settings</li>
 </ul>
-<p>No data is transmitted to or stored on external servers, except as described in Section 5. If you uninstall the App, all locally stored data is permanently deleted by the Android operating system.</p>
+<p>No personal data is transmitted to or stored on external servers; the only information held on our servers is the anonymous aggregate usage counters described in Section 2.4, and the transient requests described in Section 5. If you uninstall the App, all locally stored data is permanently deleted by the Android operating system.</p>
 
 <h2>5. Third-Party Services</h2>
 <p>The App connects to the following external services only when explicitly initiated by you:</p>
 <ul>
   <li><strong>Solana blockchain network</strong> — solely for Sign In With Solana (SIWS) wallet verification and SGT ownership checking. Only your public wallet address (which is already publicly visible on the blockchain) is used.</li>
   <li><strong>Open weather services (MET Norway, Open-Meteo)</strong> — only while Live Frost Alerts are enabled (an optional SolSow Pro feature, on by default and controllable in Settings). Requests contain only the approximate coordinates of your selected or nearest city — never your device's precise location — with no account, identifier, or other personal data.</li>
+  <li><strong>Cloudflare Workers (our analytics service)</strong> — receives the anonymous, identifier-free usage events described in Section 2.4.</li>
 </ul>
 <p>No personal data is shared with any third party.</p>
 
