@@ -29,7 +29,7 @@
 <p>Your preferences (selected growing zone, notification frequency, favorite plants, display settings, disclaimer acceptance) are stored locally on your device using Android SharedPreferences.</p>
 
 <h3>2.4 Anonymous Usage Statistics</h3>
-<p>The App sends anonymous, aggregate usage events (for example: <code>app_open</code>, <code>guide_opened</code>, <code>plant_tracked</code>) to our own analytics service, hosted on Cloudflare Workers. Each event contains <strong>only the event name</strong> — no user ID, device ID, wallet address, fingerprint, or any other identifier. An approximate country/city is derived at Cloudflare's network edge and stored solely as an aggregate daily count; <strong>your IP address is never logged or stored</strong>. Because no individual can be identified or singled out, this data is anonymous within the meaning of GDPR Recital 26 and comparable privacy laws (CCPA, LGPD, APPI, PIPA). For transparency, the aggregate totals are publicly viewable at <a href="https://solsow-analytics.aardappvark.workers.dev/public-stats">solsow-analytics.aardappvark.workers.dev/public-stats</a>.</p>
+<p>The App sends anonymous, aggregate usage events (for example: <code>app_open</code>, <code>guide_opened</code>, <code>plant_tracked</code>) to our own analytics service, hosted on Vercel. Each event contains <strong>only the event name</strong> — no user ID, device ID, wallet address, fingerprint, or any other identifier. An approximate country/city is derived at Vercel's network edge and stored solely as an aggregate daily count; <strong>your IP address is never logged or stored</strong>. Because no individual can be identified or singled out, this data is anonymous within the meaning of GDPR Recital 26 and comparable privacy laws (CCPA, LGPD, APPI, PIPA). For transparency, the aggregate totals are publicly viewable at <a href="https://solsow-analytics.vercel.app/public-stats">solsow-analytics.vercel.app/public-stats</a>.</p>
 
 <h2>3. Information We Do Not Collect</h2>
 <p>We do not collect, store, or transmit any personal information. Specifically, we do not use:</p>
@@ -56,7 +56,7 @@
 <ul>
   <li><strong>Solana blockchain network</strong> — solely for Sign In With Solana (SIWS) wallet verification and SGT ownership checking. Only your public wallet address (which is already publicly visible on the blockchain) is used.</li>
   <li><strong>Open weather services (MET Norway, Open-Meteo)</strong> — only while Live Frost Alerts are enabled (an optional SolSow Pro feature, on by default and controllable in Settings). Requests contain only the approximate coordinates of your selected or nearest city — never your device's precise location — with no account, identifier, or other personal data.</li>
-  <li><strong>Cloudflare Workers (our analytics service)</strong> — receives the anonymous, identifier-free usage events described in Section 2.4.</li>
+  <li><strong>Vercel (our analytics service)</strong> — receives the anonymous, identifier-free usage events described in Section 2.4.</li>
 </ul>
 <p>No personal data is shared with any third party.</p>
 
