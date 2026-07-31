@@ -23,7 +23,10 @@
 <p>The App requests coarse location access (<code>ACCESS_COARSE_LOCATION</code>) to determine your approximate growing zone and provide region-appropriate planting recommendations. Location data is processed entirely on your device to match against bundled growing zone definitions. <strong>Your location is never transmitted to any external server.</strong></p>
 
 <h3>2.2 Wallet Information</h3>
-<p>If you choose to use the optional Sign In With Solana (SIWS) feature, your public wallet address is stored locally on your device using Android EncryptedSharedPreferences. The App verifies Seeker Genesis Token (SGT) ownership via the public Solana blockchain. <strong>We never have access to your private keys, seed phrase, or wallet funds.</strong></p>
+<p>If you choose to use the optional Sign In With Solana (SIWS) feature, your public wallet address is stored locally on your device using Android EncryptedSharedPreferences. The App verifies Seeker Genesis Token (SGT) ownership via the public Solana blockchain. If you use <em>Settings &rarr; Restore purchase</em>, the App sends your public wallet address to Solana RPC services to read your wallet's public, already-on-chain transaction history and locate your past Pro payment; this reads public blockchain records only, signs nothing, and stores nothing beyond the unlock flag on your device. <strong>We never have access to your private keys, seed phrase, or wallet funds.</strong></p>
+
+<h3>2.5 Device Backups</h3>
+<p>Your garden data, preferences, and the Pro unlock flag may be included in Android's standard system backup (for example, Google backup), under the backup provider's own terms. Wallet data is explicitly excluded from the App's backup rules. The in-app "Garden backup" export writes a file only to the location you choose, and only when you tap Export.</p>
 
 <h3>2.3 App Preferences</h3>
 <p>Your preferences (selected growing zone, notification frequency, favorite plants, display settings, disclaimer acceptance) are stored locally on your device using Android SharedPreferences.</p>
